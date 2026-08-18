@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — ImageCompress Pro</title>
+<meta name="description" content="Privacy policy for ImageCompress Pro. No data collection. All image processing happens on your device.">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px;
+    color: #1b1b21; background: #fefbff;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e4e1e9; background: #131318; }
+    .lede { background: #1e2340 !important; border-color: #545aa8 !important; }
+    code { background: #26264a !important; }
+    footer { border-color: #33333d !important; }
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; letter-spacing: -0.5px; }
+  h2 { font-size: 1.15rem; margin-top: 2.2em; }
+  .updated { color: #6b6b76; font-size: 0.9rem; margin-top: 0; }
+  .lede {
+    background: #e0e0ff; border-left: 4px solid #545aa8;
+    padding: 14px 18px; border-radius: 10px; margin: 24px 0;
+  }
+  code { background: #eceaf4; padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+  footer {
+    margin-top: 48px; padding-top: 20px; border-top: 1px solid #dcdae3;
+    font-size: 0.85rem; color: #6b6b76;
+  }
+  a { color: #545aa8; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — ImageCompress Pro</h1>
+<p class="updated">Last updated: 6 July 2026</p>
+
+<div class="lede">
+  <strong>The short version:</strong> the app collects nothing, sends nothing, and
+  stores nothing about you. Every image is processed entirely on your device.
+</div>
+
+<h2>1. Information we collect</h2>
+<p><strong>None.</strong> The app has no user accounts, no sign-in, no analytics SDK,
+no advertising SDK, and no crash-reporting service. We do not collect, transmit, sell,
+or share any personal information, device identifiers, or usage data. The app does not
+require an internet connection to perform any of its functions.</p>
+
+<h2>2. Your photos</h2>
+<ul>
+  <li><strong>Selection.</strong> Images are chosen through the Android system photo
+  picker or the device camera app. The app cannot browse your photo library — it only
+  sees the specific image you choose.</li>
+  <li><strong>Processing.</strong> Compression, cropping, and resizing run locally
+  using Android platform codecs. No image is ever uploaded to any server.</li>
+  <li><strong>Temporary files.</strong> Results are written to the app's private cache
+  so you can preview, save, or share them. They are not accessible to other apps and
+  are deleted automatically after 24 hours.</li>
+  <li><strong>Saving.</strong> Tapping Save writes the image to your Pictures folder
+  via Android MediaStore. The file stays on your device.</li>
+  <li><strong>Sharing.</strong> Tapping Share hands the file to the app you pick in
+  Android's share sheet, which is then governed by that app's privacy policy.</li>
+</ul>
+
+<h2>3. Face detection</h2>
+<p>For photo document presets (passport, exam photo), the app uses Google ML Kit's
+<strong>on-device</strong> face detection to position the automatic crop around the
+subject's face.</p>
+<ul>
+  <li>Detection runs entirely on your device. No image or face data is sent to Google
+  or to us.</li>
+  <li>The app detects only the location and size of a face. It performs no face
+  recognition, identification, or matching.</li>
+  <li>No face data or biometric template is stored — it exists in memory only while
+  the crop is calculated.</li>
+</ul>
+<p>If Google Play services is unavailable, the app falls back to a centered crop.</p>
+
+<h2>4. Image metadata (EXIF)</h2>
+<p>Photos often carry EXIF metadata such as camera model, date, and GPS location. The
+app offers an option (on by default) to <strong>remove</strong> this metadata from the
+compressed output. We never read it for our own purposes and never transmit it.</p>
+
+<h2>5. Permissions</h2>
+<ul>
+  <li><strong>Camera — not declared.</strong> Photos are taken by your device's own
+  camera app through a system intent; the app has no direct camera access.</li>
+  <li><strong>Photos — not declared.</strong> The app uses the system photo picker and
+  does not request <code>READ_MEDIA_IMAGES</code> or
+  <code>READ_EXTERNAL_STORAGE</code>.</li>
+  <li><strong>Storage write — Android 9 and older only.</strong> On Android 9 (API 28)
+  and below, <code>WRITE_EXTERNAL_STORAGE</code> is requested solely to save a
+  compressed image to Pictures when you tap Save. It is never used to read your files.
+  On Android 10+ it is not requested at all.</li>
+</ul>
+
+<h2>6. Children's privacy</h2>
+<p>The app is suitable for general audiences and collects no data from anyone,
+including children under 13.</p>
+
+<h2>7. Third-party services</h2>
+<p>The app bundles Google ML Kit face detection, which runs locally through Google Play
+services, used only as described in section 3. See
+<a href="https://policies.google.com/privacy">Google's privacy policy</a> for
+information about Google Play services itself. The app contains no advertising networks
+and no analytics providers.</p>
+
+<h2>8. Data deletion</h2>
+<p>Because we hold no data about you, there is nothing for us to delete. To remove
+everything stored locally, uninstall the app or clear its storage from Android
+Settings → Apps → ImageCompress Pro → Storage.</p>
+
+<h2>9. Changes to this policy</h2>
+<p>Updates will be published at this URL with a revised date. Material changes will
+also be noted in the Play Store release notes.</p>
+
+<h2>10. Contact</h2>
+<p>Questions about this policy: <a href="mailto:claude.dev009@gmail.com">claude.dev009@gmail.com</a></p>
+
+<footer>
+ImageCompress Pro is an independent application. It is not affiliated with, endorsed by,
+or connected to any government body, examination authority, or recruitment agency.
+Document size presets are provided for convenience and are based on commonly published
+requirements; always verify the current specification on the official portal you are
+applying to.
+</footer>
+
+</body>
+</html>
